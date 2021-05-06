@@ -1,3 +1,7 @@
 # SpiderBot - Rescue & Surveillance
 This project deals with the design, construction and control of a walking spider bot which comprises object following and path tracking capabilities using object detection algorithms making it the best available alternative for rescue operation. In addition, it can be used for surveillance purposes in the defense sector as it stands out from the existing systems.
 This bot can be controlled and monitored from a user interface program which can also display data from the sensors, along with an autonomous working mode.
+
+
+#Proposed product or solution
+The proposed solution is to design and develop an autonomous robotic system that could be used in rescue operations and surveillance purposes which can be a better alternative to the existing systems. The traditional methods may fail in uneven terrains, thickly packed topologies and adverse weather conditions. A robotic solution with both manual and automatic steering mode by making use of path planning with obstacle avoidance system can be a great add on for both purposes. Also by enhancing the features of the robot with voice capturing technology, a system for survilling security threats in the defense sector may also be implemented. The system uses image processing algorithms for image recognition. For path planning and obstacle recognition , it uses the YOLO v3 algorithm. The distance between the objects are estimated by using the Ultrasonic sensor.
