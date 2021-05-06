@@ -8,10 +8,6 @@ servo = 22
 GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(servo,GPIO.OUT)
-# in servo motor,
-# 1ms pulse for 0 degree (LEFT)
-# 1.5ms pulse for 90 degree (MIDDLE)
-# 2ms pulse for 180 degree (RIGHT)
 
 # so for 50hz, one frequency is 20ms
 # duty cycle for 0 degree = (1/20)*100 = 5%
