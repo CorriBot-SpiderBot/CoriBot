@@ -41,15 +41,27 @@ pwm2.set_pwm_freq(60)
 
 print('Moving servo on channel, press Ctrl-C to quit...')
 #while true:
-"""
+
 pwm1.set_pwm(0, 0, 400)
+#pwm1.set_pwm(0, 400, 0)
+
 pwm1.set_pwm(3, 0, 400)
+#pwm1.set_pwm(3, 400, 0)
+
 pwm1.set_pwm(6, 0, 400)
+#pwm1.set_pwm(6, 400, 0)
+
 pwm2.set_pwm(0, 0, 400)
+#pwm2.set_pwm(0, 400, 0)
+
 pwm2.set_pwm(3, 0, 400)
+#pwm2.set_pwm(3, 400, 0)
+
 pwm2.set_pwm(6, 0, 400)
+#pwm2.set_pwm(6, 400, 0)
+
 time.sleep(1)
-"""
+
 pwm1.set_pwm(2, 0, 150)
 pwm1.set_pwm(5, 0, 200)
 pwm1.set_pwm(8, 0, 150)
