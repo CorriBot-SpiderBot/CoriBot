@@ -50,18 +50,19 @@ def standUp():
     time.sleep(1)
 
     pwm1.set_pwm(2, 0, 150)
-    pwm1.set_pwm(5, 0, 200)
+    pwm1.set_pwm(5, 0, 150)
     pwm1.set_pwm(8, 0, 150)
     pwm2.set_pwm(2, 0, 150)
     pwm2.set_pwm(5, 0, 150)
     pwm2.set_pwm(8, 0, 150)
     time.sleep(1)
     pwm1.set_pwm(1, 0, 250)
-    pwm1.set_pwm(4, 0, 250)
+    pwm1.set_pwm(4, 0, 260)
     pwm1.set_pwm(7, 0, 250)
-    pwm2.set_pwm(1, 0, 260)
+    pwm2.set_pwm(1, 0, 280)
     pwm2.set_pwm(4, 0, 250)
-    pwm2.set_pwm(7, 0, 250)
+    pwm2.set_pwm(7, 0, 260)
+    time.sleep(1)
 
 def halfMotion():
     pwm2.set_pwm(5, 0, 150)
@@ -86,7 +87,8 @@ def halfMotion():
     time.sleep(1)
 
     pwm1.set_pwm(0, 0, 400)
-    pwm1.set_pwm(1, 0, 250)
+    pwm1.set_pwm(1, 0, 280)
+    pwm1.set_pwm(2, 0, 190)
     pwm1.set_pwm(7, 0, 250)
     pwm1.set_pwm(8, 0, 150)
     pwm2.set_pwm(3, 0, 400)
@@ -115,7 +117,8 @@ def fullMotion():
     time.sleep(1)
 
     pwm1.set_pwm(0, 0, 400)
-    pwm1.set_pwm(1, 0, 250)
+    pwm1.set_pwm(1, 0, 280)
+    pwm1.set_pwm(2, 0, 190)
     pwm1.set_pwm(7, 0, 250)
     pwm1.set_pwm(8, 0, 150)
     pwm2.set_pwm(3, 0, 400)
@@ -123,35 +126,145 @@ def fullMotion():
 
     pwm1.set_pwm(5, 0, 200)
     pwm1.set_pwm(4, 0, 150)
-    pwm2.set_pwm(7, 0, 280)
-    pwm2.set_pwm(8, 0, 230)
-    pwm2.set_pwm(2, 0, 250)
-    pwm2.set_pwm(1, 0, 250)
+    pwm2.set_pwm(1, 0, 320)
+    pwm2.set_pwm(2, 0, 230)
+    pwm2.set_pwm(8, 0, 250)
+    pwm2.set_pwm(7, 0, 250)
     time.sleep(1)
 
     pwm1.set_pwm(3, 0, 470)
     time.sleep(1)
 
     pwm1.set_pwm(4, 0, 250)
-    pwm2.set_pwm(0, 0, 380)
-    pwm2.set_pwm(2, 0, 150)
+    pwm2.set_pwm(6, 0, 380)
+    pwm2.set_pwm(8, 0, 150)
     time.sleep(1)
 
     pwm2.set_pwm(4, 0, 200)
-    pwm1.set_pwm(1, 0, 200)
     pwm1.set_pwm(7, 0, 200)
+    pwm1.set_pwm(1, 0, 200)
     time.sleep(1)
 
-    pwm2.set_pwm(0, 0, 400)
-    pwm2.set_pwm(1, 0, 250)
-    pwm2.set_pwm(7, 0, 250)
-    pwm2.set_pwm(8, 0, 150)
+    pwm2.set_pwm(6, 0, 400)
+    pwm2.set_pwm(7, 0, 280)
+    pwm2.set_pwm(7, 0, 280)
+    pwm2.set_pwm(8, 0, 190)
+    pwm2.set_pwm(2, 0, 150)
     pwm1.set_pwm(3, 0, 400)
     time.sleep(1)
 
+
+
+def left():
+    pwm2.set_pwm(1, 0, 150)
+    pwm1.set_pwm(4, 0, 150)
+    pwm2.set_pwm(7, 0, 150)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(0, 0, 500)
+    pwm1.set_pwm(3, 0, 500)
+    pwm2.set_pwm(6, 0, 500)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(1, 0, 280)
+    pwm1.set_pwm(4, 0, 260)
+    pwm2.set_pwm(7, 0, 260)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(4, 0, 150)
+    pwm1.set_pwm(7, 0, 150)
+    pwm1.set_pwm(1, 0, 150)
+    time.sleep(0.5)
+    
+    pwm2.set_pwm(0, 0, 400)
+    pwm1.set_pwm(3, 0, 400)
+    pwm2.set_pwm(6, 0, 400)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(3, 0, 500)
+    pwm1.set_pwm(6, 0, 500)
+    pwm1.set_pwm(0, 0, 500)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(4, 0, 250)
+    pwm1.set_pwm(7, 0, 250)
+    pwm1.set_pwm(1, 0, 250)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(1, 0, 150)
+    pwm1.set_pwm(4, 0, 150)
+    pwm2.set_pwm(7, 0, 150)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(3, 0, 400)
+    pwm1.set_pwm(6, 0, 400)
+    pwm1.set_pwm(0, 0, 400)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(1, 0, 280)
+    pwm1.set_pwm(4, 0, 260)
+    pwm2.set_pwm(7, 0, 260)
+    time.sleep(0.5)
+    
+
+def right():
+    pwm2.set_pwm(1, 0, 150)
+    pwm1.set_pwm(4, 0, 150)
+    pwm2.set_pwm(7, 0, 150)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(0, 0, 300)
+    pwm1.set_pwm(3, 0, 300)
+    pwm2.set_pwm(6, 0, 300)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(1, 0, 280)
+    pwm1.set_pwm(4, 0, 260)
+    pwm2.set_pwm(7, 0, 260)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(4, 0, 150)
+    pwm1.set_pwm(7, 0, 150)
+    pwm1.set_pwm(1, 0, 150)
+    time.sleep(0.5)
+    
+    pwm2.set_pwm(0, 0, 400)
+    pwm1.set_pwm(3, 0, 400)
+    pwm2.set_pwm(6, 0, 400)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(3, 0, 300)
+    pwm1.set_pwm(6, 0, 300)
+    pwm1.set_pwm(0, 0, 300)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(4, 0, 250)
+    pwm1.set_pwm(7, 0, 250)
+    pwm1.set_pwm(1, 0, 250)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(1, 0, 150)
+    pwm1.set_pwm(4, 0, 150)
+    pwm2.set_pwm(7, 0, 150)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(3, 0, 400)
+    pwm1.set_pwm(6, 0, 400)
+    pwm1.set_pwm(0, 0, 400)
+    time.sleep(0.5)
+
+    pwm2.set_pwm(1, 0, 280)
+    pwm1.set_pwm(4, 0, 260)
+    pwm2.set_pwm(7, 0, 260)
+    time.sleep(0.5)
+    
+
+
+
 print('Moving servo on channel, press Ctrl-C to quit...')
 #while true:
+# standUp()
+# fullMotion()
 standUp()
-fullMotion()
-fullMotion()
-standUp()
+right()
+right()
